@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kajal's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 40);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(20, 20, 60);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(114, 114, 204);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+
+        .leftsection {
+            font-size: 2.4rem;
+
+        }
+
+        .rightsection img {
+            width: 75%;
+            height: 90px 30;
+        }
+
+        .purple {
+            color: rgb(144, 70, 213);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.7rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-text {
+            flex: 1 1 500px;
+            padding: 20px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .skills {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .textgrey {
+            color: rgb(146, 131, 131);
+        }
+
+        .list {
+            font-size: 1.3rem;
+            color: rgb(144, 70, 213);
+        }
+
+
+        .contact {
+
+            padding: 40px 20px;
+        }
+
+        .contact h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .container ul {
+            margin-left: 95px;
+            text-align: left;
+            color: white;
+            list-style-position: inside;
+        }
+
+        .container {
+            display: block;
+            text-align: left;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 18px;
+            color: #bff0f0;
+        }
+
+        .contact-list li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-list i {
+            margin-right: 10px;
+            color: rgb(144, 70, 213);
+        }
+
+        .contact-list a {
+            color: rgb(144, 70, 213);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* === Mobile Responsive Styles === */
+        @media (max-width: 768px) {
+            .firstsection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rightsection img {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .about-content {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px;
+            }
+
+            .about-text {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            .thirdsection,
+            .secondsection {
+                padding: 0 20px;
+            }
+
+            .list {
+                font-size: 1rem;
+            }
+
+            .contact-list {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi,This is <span class="purple">Kajal.</span>
+                <div></div>I am an AI/ML enthusiast on a journey to turn curiosity into intelligent solutions.
+            </div>
+
+            <div class="rightsection">
+
+                <img src="photoAI.png" alt="Engineer Image" width="300">
+            </div>
+        </section>
+
+
+
+        <hr>
+        <section class="secondsection" id="about">
+            <section class="about-me">
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1>About Me</h1>
+                        <p> Hello! I’m Kajal Mohapatra, currently pursuing my batchlor of technology degree in Veer
+                            Surendra Sai University of Technology,Burla and deeply interested in the
+                            fields of Web Development, Artificial Intelligence, and Machine Learning. My curiosity
+                            for how technology works fuels my desire to build smart and useful solutions. </p>
+                        <p> I have hands-on experience with HTML and CSS, and I’m currently exploring JavaScript,
+                            Python. I'm also enthusiastic about AI/ML and continuously
+                            learning through online courses and small projects. </p>
+                        <p> Apart from coding, I enjoy designing interfaces, working on college tech events, and
+                            participating in hackathons or coding clubs. These experiences help me collaborate,
+                            think critically, and grow as a developer. </p>
+                        <p> I believe in continuous learning and self-improvement. My goal is to contribute to
+                            meaningful projects that can impact lives positively, and I’m open to internship
+                            opportunities, collaborations, or community work. </p>
+
+
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+        <hr>
+        <section class="thirdsection" id="skills">
+            <h2> My Skills</h2>
+            <span class="textgrey"> What I have learn so far</span>
+            <section class="skills">
+
+
+                <ul class="list">
+                    <li>HTML & CSS</li>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>Figma</li>
+                    <li>Git and GitHub</li>
+                </ul>
+
+
+            </section>
+        </section>
+
+
+        <section class="fourthsection" id="contact"></section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <hr />
+                <ul class="contact-list">
+                    <li> <i class="fas fa-envelope"></i> <strong>Email:</strong> <a
+                            href="mailto:017kajal.mohapatra@gmail.com">017kajal.mohapatra@gmail.com</a> </li>
+                    <li> <i class="fas fa-phone-alt"></i> <strong>Mobile:</strong> <a href="tel:+8917385557">+91
+                            8917385557</a> </li>
+
+                    <li> <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a
+                            href="https://linkedin.com/in/kajal-mohapatra-286554308"
+                            target="_blank">linkedin.com/in/kajal-mohapatra</a> </li>
+                </ul>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
